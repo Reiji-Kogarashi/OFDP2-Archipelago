@@ -1,0 +1,301 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<RootNamespace>OFDP2_Archipelago</RootNamespace>
+		<LangVersion>default</LangVersion>
+		<IsPackable>false</IsPackable>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<AssemblyName>OFDP2_Archipelago</AssemblyName>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Assembly-CSharp-firstpass">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="BundledApClient">
+		  <HintPath>Lib\BundledApClient.dll</HintPath>
+		</Reference>
+		<Reference Include="ConsoleUtilsImport">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\ConsoleUtilsImport.dll</HintPath>
+		</Reference>
+		<Reference Include="DataPlatformImport">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\DataPlatformImport.dll</HintPath>
+		</Reference>
+		<Reference Include="GalaxyCSharp">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\GalaxyCSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Kartridge">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\Kartridge.dll</HintPath>
+		</Reference>
+		<Reference Include="Rewired_Core">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\Rewired_Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Rewired_Windows">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\Rewired_Windows.dll</HintPath>
+		</Reference>
+		<Reference Include="StorageImport">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\StorageImport.dll</HintPath>
+		</Reference>
+		<Reference Include="TextSystemsImport">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\TextSystemsImport.dll</HintPath>
+		</Reference>
+		<Reference Include="TwitchChatter">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\TwitchChatter.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Analytics.DataPrivacy">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\Unity.Analytics.DataPrivacy.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AccessibilityModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AIModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ARModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.ARModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.BaselibModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.BaselibModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClothModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterInputModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterRendererModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CrashReportingModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DirectorModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.FileSystemHttpModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.FileSystemHttpModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GameCenterModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GridModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.HotReloadModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.JSONSerializeModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.LocalizationModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.Networking">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.Networking.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PerformanceReportingModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.Physics2DModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ProfilerModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ScreenCaptureModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SharedInternalsModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpatialTracking">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.SpatialTracking.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteMaskModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteShapeModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.StreamingModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.StreamingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.StyleSheetsModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.StyleSheetsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubstanceModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainPhysicsModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TilemapModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.Timeline">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.Timeline.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TimelineModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.TimelineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TLSModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.TLSModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UmbraModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UmbraModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UNETModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UNETModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityConnectModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityTestProtocolModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAudioModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestWWWModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VehiclesModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VFXModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VideoModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VRModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.WindModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.WindModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEtx">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UnityEtx.dll</HintPath>
+		</Reference>
+		<Reference Include="UsersImport">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\UsersImport.dll</HintPath>
+		</Reference>
+		<Reference Include="XboxOneCommonImport">
+			<HintPath>$(GamePath)/One Finger Death Punch 2_Data\Managed\XboxOneCommonImport.dll</HintPath>
+		</Reference>
+		<Reference Include="MelonLoader">
+			<HintPath>$(GamePath)/MelonLoader\net35\MelonLoader.dll</HintPath>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>$(GamePath)/MelonLoader\net35\0Harmony.dll</HintPath>
+		</Reference>
+
+	</ItemGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="Archipelago/ApItemHandler.cs" />
+		<Compile Include="Archipelago/ApLoginUI.cs" />
+		<Compile Include="Archipelago/ApPlayerData.cs" />
+		<Compile Include="Archipelago/ApSlotDataHelper.cs" />
+		<Compile Include="Archipelago/ArchipelagoFactory.cs" />
+		<Compile Include="Archipelago/ArchipelagoSaveHandler.cs" />
+		<Compile Include="Core.cs" />
+		<Compile Include="Patch/ModdedDataHelper.cs" />
+		<Compile Include="Patch/ModdedDeathLink.cs" />
+		<Compile Include="Patch/ModdedFightMe.cs" />
+		<Compile Include="Patch/ModdedGameControlLoad.cs" />
+		<Compile Include="Patch/ModdedLevelClick.cs" />
+		<Compile Include="Patch/ModdedLevelPointStart.cs" />
+		<Compile Include="Patch/ModdedLevelWin.cs" />
+		<Compile Include="Patch/UIHelper.cs" />
+		<Content Include="Directory.Build.props" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Lib\" />
+	</ItemGroup>
+	
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;$(GamePath)/Mods/Archipelago&quot;" />
+	</Target>
+</Project>

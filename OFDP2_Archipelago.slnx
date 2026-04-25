@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="APWorld/APWorld.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="c4b74e94-021d-46cb-b5e2-98389618ee38">
+    <Build Project="false" />
+  </Project>
+  <Project Path="APClient/OFDP2_Archipelago.csproj" />
+</Solution>
