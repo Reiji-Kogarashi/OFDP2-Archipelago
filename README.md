@@ -29,7 +29,7 @@ Here's some things to know about your save data:
   - MelonLoader should detect your game automatically. If not, then the game's directory should be `C:\Program Files (x86)\Steam\steamapps\common\One Finger Death Punch 2`
   - Recommended version: 0.7.2
 - Launch then close the game to finalize MelonLoader installation.
-- Download the `.zip` file from the [Release page], then extract its content to the `Mods` folder in your game's directory.
+- Download the `.zip` file from the [Release page](https://github.com/Reiji-Kogarashi/OFDP2-Archipelago/releases/), then extract its content to the `Mods` folder in your game's directory.
 - Launch the game. You should be welcomes with a (pretty ugly) login screen
 
 ## How to uninstall
