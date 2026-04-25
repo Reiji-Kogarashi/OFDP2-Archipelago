@@ -5,7 +5,7 @@ Here's some things to know about your save data:
 - The savefile the game uses is located in `AppData/LocalLow/Silver Dollar Games/One Finger Death Punch 2/OFDP2Save.dat`
 - The mod will automatically create a backup of your save and replace your current save with the corresponding archipelago seed/slot data, or create a new one in case of a new generation.
   - After closing the game, your save data from your current AP session will be saved in `AppData/LocalLow/Silver Dollar Games/One Finger Death Punch 2/ApSession/AP_{seed}_{slot_name}.dat`. That's the save that will be loaded the next time you log in.
-- When you launch the Archipelago mod for the first time, a backup file will be created, named `AppData/LocalLow/Silver Dollar Games/One Finger Death Punch 2/OFDP2Save_Emergencybackup.dat`. This is your original vanilla savefile, in case something goes horribly wrong to your data. If that's the case, use it to replace `OFDP2Save.dat`
+- When you launch the Archipelago mod for the first time, a second backup file will also be created, named `AppData/LocalLow/Silver Dollar Games/One Finger Death Punch 2/OFDP2Save_Emergencybackup.dat`. This is your original vanilla savefile, in case something goes horribly wrong to your data. If that's the case, use it to replace `OFDP2Save.dat`
 
 ## One Finger Death Punch 2 in an Archipelago run
 - Goal:
