@@ -17,7 +17,12 @@ namespace OFDP2_Archipelago
             string stageCoordinates = (PlayerSave.mapNumber + 1).ToString() + "-" + (__instance.levelNumber + 1).ToString();
             string stageLocationName = "Stage " + stageCoordinates;
 
-            if (ApPlayerData.completedLocations.Contains(stageLocationName))
+            if (PlayerSave.mapNumber == 8 && __instance.levelNumber == 13)
+            {
+                // Goal stage in gold color
+                __instance.textLevelNumber.color = new Color(1f, 0.84f, 0f);
+            }
+            else if (ApPlayerData.completedLocations.Contains(stageLocationName))
             {
                 __instance.textLevelNumber.color = new Color(0f, 0.5f, 0f);
             }
