@@ -296,6 +296,6 @@
 	</ItemGroup>
 	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;$(GamePath)/Mods/Archipelago&quot;" />
+		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;$(GamePath)/Mods/OFDP2-Archipelago&quot;" />
 	</Target>
 </Project>

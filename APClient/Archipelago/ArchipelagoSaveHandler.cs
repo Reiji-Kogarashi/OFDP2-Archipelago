@@ -14,9 +14,6 @@ namespace OFDP2_Archipelago
         private string m_SessionId;
         private string m_SaveDirectory;
 
-        private MelonPreferences_Category m_SaveCategory;
-        private MelonPreferences_Entry<List<string>> m_PossessedItems;
-
         private bool m_ValidSave = false;
 
         public ArchipelagoSaveHandler() { }
@@ -35,10 +32,7 @@ namespace OFDP2_Archipelago
 
         private void InitializeSaveStructure()
         {
-            m_SaveCategory = MelonPreferences.CreateCategory("ApSessionSave");
 
-            // Create entries here
-            m_PossessedItems = m_SaveCategory.CreateEntry<List<string>>("PossessedItems", null);
         }
 
         public void InitSessionSave()
@@ -47,17 +41,19 @@ namespace OFDP2_Archipelago
             string slotName = ArchipelagoFactory.Instance.SlotName;
 
             m_SessionId = "AP_" + seed + "_" + slotName;
-            m_SaveDirectory = Application.persistentDataPath + "/ApSession/" + m_SessionId;
-            string saveFilename = m_SaveDirectory + "/" + m_SessionId + ".cfg";
+            m_SaveDirectory = Application.persistentDataPath + "/ApSession/";
             string ofdp2savename = m_SaveDirectory + "/" + m_SessionId + ".dat";
 
             if (!Directory.Exists(m_SaveDirectory))
             {
                 Directory.CreateDirectory(m_SaveDirectory);
+            }
 
+            if (!File.Exists(ofdp2savename))
+            {
                 ModdedDataHelper.InitNewPlayerSave();
             }
-            else if (File.Exists(ofdp2savename))
+            else
             {
                 File.Copy(ofdp2savename, Application.persistentDataPath + "/OFDP2Save.dat", true);
 
@@ -66,18 +62,7 @@ namespace OFDP2_Archipelago
                 Melon<Core>.Logger.Msg("DAT file loaded");
             }
 
-            m_SaveCategory.SetFilePath(saveFilename);
-
-            Melon<Core>.Logger.Msg($"Setting session savefile {saveFilename}");
-
-            LoadSessionData();
-
             m_ValidSave = true;
-        }
-
-        private void LoadSessionData()
-        {
-            
         }
 
         public void SaveApPlayerData()
