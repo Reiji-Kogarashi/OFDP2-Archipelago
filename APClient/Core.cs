@@ -95,13 +95,6 @@ namespace OFDP2_Archipelago
 
             ArchipelagoFactory.Instance.Update();
             UIHelper.Instance.Update();
-
-            // TEST
-            if (Input.GetKeyDown(KeyCode.L) && ScriptMain.SM != null)
-            {
-                ScriptMain.SM.player.martialArtStyleTarget = EnumMartialArt.LightSword;
-                ScriptMain.SM.player.weaponHitCounter = 50;
-            }
         }
 
         public override void OnLateUpdate()
