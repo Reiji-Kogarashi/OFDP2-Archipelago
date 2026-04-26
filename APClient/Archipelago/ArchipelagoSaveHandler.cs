@@ -57,7 +57,11 @@ namespace OFDP2_Archipelago
             {
                 File.Copy(ofdp2savename, Application.persistentDataPath + "/OFDP2Save.dat", true);
 
-                GameControl.control.Load();
+                //GameControl.control.Load();
+                if (GameControl.control != null)
+                {
+                    GameControl.control.StartCoroutine("LoadData");
+                }
 
                 Melon<Core>.Logger.Msg("DAT file loaded");
             }

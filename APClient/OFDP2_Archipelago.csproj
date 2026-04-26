@@ -288,6 +288,7 @@
 		<Compile Include="Patch/ModdedLevelPointStart.cs" />
 		<Compile Include="Patch/ModdedLevelWin.cs" />
 		<Compile Include="Patch/UIHelper.cs" />
+		<Compile Include="Patch\ModdedSetLevels.cs" />
 		<Content Include="Directory.Build.props" />
 	</ItemGroup>
 

@@ -50,15 +50,7 @@ namespace OFDP2_Archipelago
                 return;
             }
 
-            string finishedLevel = mapNumber.ToString() + "-" + mapLevel.ToString();
-
-            if (ApPlayerData.mapAccessItems.ContainsKey(finishedLevel))
-            {
-                string mapAccessItem = ApPlayerData.mapAccessItems[finishedLevel];
-                PlayerSave.mapLevelBeaten[PlayerSave.mapNumber, PlayerSave.mapLevel] = ApPlayerData.possessedStageUnlockItems.Contains(mapAccessItem);
-            }
-
-            string locationName = "Stage " + finishedLevel;
+            string locationName = "Stage " + mapNumber.ToString() + "-" + mapLevel.ToString();
             ArchipelagoFactory.Instance.ReportCheckCompletion(locationName);
         }
     }

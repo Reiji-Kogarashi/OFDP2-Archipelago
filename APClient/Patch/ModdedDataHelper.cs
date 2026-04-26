@@ -23,6 +23,11 @@ namespace OFDP2_Archipelago
             {
                 UnlockAllLevels();
             }
+
+            if (GameControl.control != null)
+            {
+                GameControl.control.StartCoroutine("SaveData");
+            }
         }
 
         private static void UnlockAllLevels()
@@ -33,11 +38,7 @@ namespace OFDP2_Archipelago
             {
                 for (int j = 0; j < numLevels; j++)
                 {
-                    string stageCoordinates = (i + 1).ToString() + "-" + (j + 1).ToString();
-                    if (!ApPlayerData.mapAccessItems.ContainsKey(stageCoordinates))
-                    {
-                        PlayerSave.mapLevelBeaten[i, j] = true;
-                    }
+                    PlayerSave.mapLevelBeaten[i, j] = true;
                 }
             }
         }

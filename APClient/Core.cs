@@ -4,7 +4,7 @@ using Archipelago.MultiClient.Net;
 using Archipelago.MultiClient.Net.Enums;
 using MelonLoader;
 
-[assembly: MelonInfo(typeof(OFDP2_Archipelago.Core), "OFDP2_Archipelago", "0.1.0", "Reiji Kogarashi", null)]
+[assembly: MelonInfo(typeof(OFDP2_Archipelago.Core), "OFDP2_Archipelago", "0.1.1", "Reiji Kogarashi", null)]
 [assembly: MelonGame("Silver Dollar Games", "One Finger Death Punch 2")]
 
 namespace OFDP2_Archipelago
