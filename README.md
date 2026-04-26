@@ -18,6 +18,7 @@ Here's some things to know about your save data:
     - The coordinates will be written in GREEN if the location check is complete.
 - Items:
   - Map unlocks
+    - After receiving a Map item, in order to go to the new map, you can't use LB/RB/Map switch shortcut yet, because of the way vanilla game was made. You have to go to the last level of your current map and click the green arrow to unlock the map and the ability to use Map Switch shortcut.
   - Skill Gems (aka Skill Points)
   - Weapon (filler)
   - Legendary Weapon (Golden-Ringed Sword or Guand Dao) (filler)
@@ -28,8 +29,19 @@ Here's some things to know about your save data:
   - MelonLoader should detect your game automatically. If not, then the game's directory should be `C:\Program Files (x86)\Steam\steamapps\common\One Finger Death Punch 2`
   - Recommended version: 0.7.2
 - Launch then close the game to finalize MelonLoader installation.
-- Download the `.zip` file from the [Release page], then extract its content to the `Mods` folder in your game's directory.
+- Download the `.zip` file from the [Release page](https://github.com/Reiji-Kogarashi/OFDP2-Archipelago/releases/), then extract its content to the `Mods` folder in your game's directory.
 - Launch the game. You should be welcomes with a (pretty ugly) login screen
 
 ## How to uninstall
 Just delete the `Mods/OFDP2-Archipelago` folder and voilà.
+
+## Notes
+- **WATCH OUT if you are BK. If you stay in the World Map for 300 seconds, a JUMPSCARE will happen. This is a prank from the game devs. If you don't want that, I suggest you go wait in another screen. I may consider implementing an option for this.**
+- I have implemented the ability to switch between keyboard/mouse and gamepad in the World Map (instead of just the main menu in the vanilla game). That's because keyboard/mouse users can navigate the map more easily. Like you can literally zoom from stage 1-1 to stage 1-30 in a single click.
+
+## FAQ
+### HELP! The game is too hard and I ran out of Revenge Token!
+Don't worry. Actually there is a cheat code hidden by the vanilla game. If you go to the World Map and input this: `Down, Up, Right, Left`, you can get a free Revenge Token. You can repeat this cheat as many times as you want
+
+### *yawn* This game is too easy
+Lucky for you, there is also a `Hard Mode` cheat code as well. From the Main Menu, go to the "More" screen. There, input `Up, Right, Down, Left` and you will be taken in front of a computer with two buttons: a green one, which is already pushed by default, and a red broken one. Press that red button to activate Hard Mode. What this does is speed up the enemies considerably.
