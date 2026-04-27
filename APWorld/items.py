@@ -62,9 +62,9 @@ def get_filler_item_name(world: OFDP2World) -> str:
 def create_item_with_correct_classification(world: OFDP2World, name: str) -> OFDP2Item:
     classification = DEFAULT_ITEM_CLASSIFICATIONS[name]
 
-    if name == "Skill Gem" and world.options.required_skill_gems > 0:
-        classification = ItemClassification.progression
+    return OFDP2Item(name, classification, ITEM_NAME_TO_ID[name], world.player)
 
+def create_item_with_classification_override(world: OFDP2World, name: str, classification: ItemClassification) -> OFDP2Item:
     return OFDP2Item(name, classification, ITEM_NAME_TO_ID[name], world.player)
 
 def create_all_unique_progression_items(world: OFDP2World):
@@ -80,7 +80,10 @@ def create_skill_gem_items(world: OFDP2World):
     items = []
 
     for i in range(78):
-        items.append(world.create_item("Skill Gem"))
+        if (i < world.options.required_skill_gems):
+            items.append(world.create_item_with_classification_override("Skill Gem", ItemClassification.progression))
+        else:
+            items.append(world.create_item("Skill Gem"))
 
     return items
 

@@ -39,6 +39,9 @@ class OFDP2World(World):
     def create_item(self, name: str) -> items.OFDP2Item:
         return items.create_item_with_correct_classification(self, name)
 
+    def create_item_with_classification_override(self, name: str, classification: items.ItemClassification) -> items.OFDP2Item:
+        return items.create_item_with_classification_override(self, name, classification)
+
     def get_filler_item_name(self) -> str:
         return items.get_filler_item_name(self)
 
