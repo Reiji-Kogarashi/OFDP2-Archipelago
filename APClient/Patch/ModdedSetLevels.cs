@@ -16,7 +16,11 @@ namespace OFDP2_Archipelago
                 if (ApPlayerData.mapAccessItems.ContainsKey(stageCoordinates))
                 {
                     string mapAccessItem = ApPlayerData.mapAccessItems[stageCoordinates];
-                    __instance.map[PlayerSave.mapNumber].levelPositionStats[j].isExit = ApPlayerData.possessedStageUnlockItems.Contains(mapAccessItem);
+                    bool isExit = ApPlayerData.possessedStageUnlockItems.Contains(mapAccessItem);
+                    __instance.map[PlayerSave.mapNumber].levelPositionStats[j].isExit = isExit;
+                    __instance.rectMapArrow.gameObject.SetActive(isExit);
+
+                    Melon<Core>.Logger.Msg($"Stage {stageCoordinates} is exit: {__instance.map[PlayerSave.mapNumber].levelPositionStats[j].isExit}");
                 }
             }  
         }

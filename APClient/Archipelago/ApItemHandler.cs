@@ -48,6 +48,8 @@ namespace OFDP2_Archipelago
             { EnumMartialArt.LightSwordPurple, "Purple Lightsaber" }
         };
 
+        Queue<ItemInfo> m_ItemQueue = new Queue<ItemInfo>();
+
         Queue<ReceivedWeaponInfo> m_ReceivedPowerWeapons = new Queue<ReceivedWeaponInfo>();
 
         Queue<string> m_LegendaryWeaponSenders = new Queue<string>();
@@ -56,6 +58,8 @@ namespace OFDP2_Archipelago
 
         float m_FirstActivationTimer = 1f;
         bool m_Active = false;
+
+        bool m_ResetSkillGemsAndTokens = false;
 
         public ApItemHandler() { }
 
@@ -66,6 +70,18 @@ namespace OFDP2_Archipelago
 
         public void Update()
         {
+            while (m_ItemQueue.Count > 0 && ArchipelagoSaveHandler.Instance.ValidSave)
+            {
+                if (m_ResetSkillGemsAndTokens)
+                {
+                    PlayerSave.skillUnusedStars = 0;
+                    PlayerSave.revengeTokens = 0;
+                    m_ResetSkillGemsAndTokens = false;
+                }
+
+                ProcessItem(m_ItemQueue.Dequeue());
+            }
+
             if (!m_Active)
                 return;
 
@@ -96,6 +112,18 @@ namespace OFDP2_Archipelago
         }
 
         public void ReceiveItem(ItemInfo itemInfo)
+        {
+            if (!ArchipelagoSaveHandler.Instance.ValidSave)
+            {
+                m_ItemQueue.Enqueue(itemInfo);
+                m_ResetSkillGemsAndTokens = true;
+                return;
+            }
+
+            ProcessItem(itemInfo);
+        }
+
+        void ProcessItem(ItemInfo itemInfo)
         {
             if (itemInfo.ItemName.Contains("Map #"))
             {

@@ -15,6 +15,10 @@ namespace OFDP2_Archipelago
         private string m_SaveDirectory;
 
         private bool m_ValidSave = false;
+        public bool ValidSave 
+        { 
+            get { return m_ValidSave; }
+        }
 
         public ArchipelagoSaveHandler() { }
 
